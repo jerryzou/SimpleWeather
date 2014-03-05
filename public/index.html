@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Weather</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/weatherMap.js"></script>
+    <script>
+      $(document).ready(function(){
+        new WeatherMap($('#map-canvas'),{
+          zoom: 10,
+          center: new google.maps.LatLng(-37.925784,145.053593),
+          draggableCursor: 'crosshair',
+          disableDefaultUI: true
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+.wicon{
+	float: left;
+	margin-right: 3px;
+}
+.wtemp{
+	min-width: 160px;
+}
